@@ -51,5 +51,5 @@ log
 )
 O(nlogn)).
 
-Segue abaixo o design de arquitetura da estrutura dos services, sendo chamado apenas na classe controladora:
+Segue abaixo o design de arquitetura da estrutura dos services, sendo chamado apenas na classe controladora. para fins de simplificacao, as interfaces usadas em cada rota sao as mesmas, tornando o reuso possivel, mas simplificado no modelo abaixo:
 ![Texto alternativo](src/main/resources/templates/PokemonServiceArchitecture.png)
