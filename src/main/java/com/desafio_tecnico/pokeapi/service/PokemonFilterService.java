@@ -5,5 +5,5 @@ import com.desafio_tecnico.pokeapi.dto.PokemonResult;
 import java.util.List;
 
 public interface PokemonFilterService {
-    List<PokemonResult> filter(List<PokemonResult> pokemons, String query);
+    List<PokemonResult> filterByQuery(List<PokemonResult> pokemons, String query);
 }

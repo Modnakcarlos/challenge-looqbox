@@ -14,7 +14,7 @@ public class PokemonFilterServiceImpl implements PokemonFilterService {
      * Filtra a lista de Pokémon por uma query (insensível a maiúsculas/minúsculas).
      */
     @Override
-    public List<PokemonResult> filter(List<PokemonResult> pokemons, String query) {
+    public List<PokemonResult> filterByQuery(List<PokemonResult> pokemons, String query) {
         if (query == null || query.isEmpty()) {
             return pokemons;
         }
