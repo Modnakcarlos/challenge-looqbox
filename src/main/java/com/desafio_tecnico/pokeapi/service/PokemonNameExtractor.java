@@ -4,6 +4,6 @@ import com.desafio_tecnico.pokeapi.dto.PokemonResult;
 
 import java.util.List;
 
-public interface PokemonFilterService {
-    List<PokemonResult> filter(List<PokemonResult> pokemons, String query);
+public interface PokemonNameExtractor {
+    List<String> extractNames(List<PokemonResult> pokemons);
 }
