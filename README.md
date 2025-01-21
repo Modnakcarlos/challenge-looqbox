@@ -51,4 +51,5 @@ log
 )
 O(nlogn)).
 
-
+Segue abaixo o design de arquitetura da estrutura dos services, sendo chamado apenas na classe controladora:
+![Texto alternativo](src/main/resources/templates/PokemonServiceArchitecture.png)
