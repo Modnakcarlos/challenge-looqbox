@@ -4,7 +4,7 @@ import com.desafio_tecnico.pokeapi.client.ExternalApiClient;
 import com.desafio_tecnico.pokeapi.dto.PokemonResult;
 import com.desafio_tecnico.pokeapi.service.PokemonNameExtractor;
 import com.desafio_tecnico.pokeapi.service.PokemonNameService;
-import com.desafio_tecnico.pokeapi.service.sort.PokemonSortService;
+import com.desafio_tecnico.pokeapi.service.sort.impl.PokemonSortServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,12 +14,12 @@ public class PokemonNameServiceImpl implements PokemonNameService {
 
     private final ExternalApiClient apiClient;
     private final PokemonFilterServiceImpl filterService;
-    private final PokemonSortService sortService;
+    private final PokemonSortServiceImpl sortService;
     private final PokemonNameExtractor nameExtractor;
 
     public PokemonNameServiceImpl(ExternalApiClient apiClient,
                                   PokemonFilterServiceImpl filterService,
-                                  PokemonSortService sortService,
+                                  PokemonSortServiceImpl sortService,
                                   PokemonNameExtractor nameExtractor) {
         this.apiClient = apiClient;
         this.filterService = filterService;
